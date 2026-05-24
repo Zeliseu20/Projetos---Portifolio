@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendragerman Moda Contato</title>
+    <link rel="stylesheet" href="style_04.css">
+</head>
+<body>
+    
+    <section class=".section2">
+	<h2>Caso esteja interessado em algum dos nossos produtos, entre em contato conosco pelo formulário abaixo!</h2>
+
+	<form action="" method="post">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required placeholder="Nome Completo">
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required placeholder="Email">
+
+        <label for="radio">Gênero:</label>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino" required>
+
+       <script>
+        if (document.getElementById('masculino').checked) {
+            var genero = 'Masculino';
+        } else if (document.getElementById('feminino').checked) {
+            var genero = 'Feminino';
+        } else {
+            var genero = 'Não especificado';
+        }
+        </script>
+
+
+		<label for="item">Produto de interesse:</label>
+		<select id="item" name="item" required>
+			<option value="produto">Selecione um produto</option>
+			<option value="camiseta_social">Camiseta Social</option>
+			<option value="camisa_polo">Camisa Polo</option>
+			<option value="calca_moletom">Calça Moletom</option>
+			<option value="calca_jeans">Calça Jeans</option>
+            <option value="tenis">Tênis</option>
+			<option value="oculos">Óculos de Sol</option>
+			<option value="relogio">Relógio</option>
+        </select>
+
+            
+        <label for="tamanho">Tamanho:</label>
+		<select id="tamanho" name="tamanho" required>
+			<option value="tamanho">Selecione um tamanho</option>
+			<option value="pp">pp</option>
+			<option value="p">p</option>
+			<option value="m">m</option>
+			<option value="g">g</option>
+            <option value="gg">gg</option>
+			<option value="g1">g1</option>
+			<option value="g2">g2</option>
+        </select>
+
+
+        <label for="checkbox">Deseja receber novidades e promoções por email?</label>
+        <label for="sim">Sim</label>
+        <input type="checkbox" id="sim" name="newsletter" value="sim">
+        <label for="nao">Não</label>
+        <input type="checkbox" id="nao" name="newsletter" value="nao">
+		</select>
+
+		<label for="mensagem">Mensagem:</label>
+		<textarea id="mensagem" name="mensagem" minlength="10" maxlength="500" placeholder="Digite sua mensagem aqui..."></textarea>
+
+		<button type="submit" class=".btn">Enviar</button>
+	</form>
+<div>
+
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 Vendragerman Moda. Todos os direitos reservados.</p>
+<br><br><br>
+    <button onclick="window.location.href='loja_home.html'">Voltar para a página inicial</button>
+    <button onclick="window.location.href='produtos.html'">Ver produtos</button>
+
+    <div class="div_a">
+
+<button onclick="altenarContraste()">Alternar modo alto contraste</button>
+<br><br>
+<button onclick="aumentarFonte()">Aumentar Fonte</button>
+<button onclick="diminuirFonte()">Diminuir Fonte</button>
+<br><br>
+ 
+
+ <div>
+<script>
+	function aumentarFonte() {
+	document.documentElement.style.fontSize = parseInt 
+	(getComputedStyle(document.documentElement).fontSize) + 1 + 'px'; }
+	function diminuirFonte() {
+	document.documentElement.style.fontSize = parseInt
+	(getComputedStyle(document.documentElement).fontSize) - 1 + 'px'; }
+</script>
+ 
+<script>
+	function altenarContraste() {
+		document.body.classList.toggle('contraste');
+		}
+</script>
+
+<div vw class="enabled">
+<div vw-access-button class="active"></div>
+<div vw-plugin-wrapper>
+<div class="vw-plugin-top-wrapper"></div>
+</div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+
+</div>
+</div>
+</footer>

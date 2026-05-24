@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendragerman Moda</title>
+    <link rel="stylesheet" href="style_04.css">
+</head>
+<body>
+
+    <section>
+    <h1>Vendragerman Moda</h1>
+    <h2>A NOVA ERA DA MODA</h2>
+    <br></br>
+    <p>Na Vendragerman Moda vendemos roupas de alta qualidade para a moda masculina e feminina com preço asseciveis e promoções diarias.</p>
+    <p>Nossos produtos são constituidos de calças de diferentes modelos, camisetas sociais, diversos calçados, acessoríos do dia a dia, etc.</p>
+</section>
+
+<div>
+
+<h3>Veja nossos produtos</h3>
+
+<a href="produtos.html">Produtos</a>
+
+<h3>Entre em contato e faça seu pedido!</h3>
+
+<a href="contato.html">Contato</a>
+
+
+</div>
+
+<footer>
+    <p>© 2026 Vendragerman Moda. Todos os direitos reservados.</p>
+<br><br><br>
+<button onclick="altenarContraste()">Alternar modo alto contraste</button>
+<br><br>
+<button onclick="aumentarFonte()">Aumentar Fonte</button>
+<button onclick="diminuirFonte()">Diminuir Fonte</button>
+<br><br>
+ 
+
+ <div>
+<script>
+	function aumentarFonte() {
+	document.documentElement.style.fontSize = parseInt 
+	(getComputedStyle(document.documentElement).fontSize) + 1 + 'px'; }
+	function diminuirFonte() {
+	document.documentElement.style.fontSize = parseInt
+	(getComputedStyle(document.documentElement).fontSize) - 1 + 'px'; }
+</script>
+ 
+<script>
+	function altenarContraste() {
+		document.body.classList.toggle('contraste');
+		}
+</script>
+
+<div vw class="enabled">
+<div vw-access-button class="active"></div>
+<div vw-plugin-wrapper>
+<div class="vw-plugin-top-wrapper"></div>
+</div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</div>
+</footer>
+
+
+
+</body>
+</html>
