@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="escola_gera_style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escola Gera</title>
+</head>
+<body>
+     <header>
+        <h1>Escola Gera</h1>
+     </header>
+
+     <section>
+        
+        <p> A Escola Gera nasceu de uma grande vontade de trazer o ensino de forma diferente para gerar novas gerações com estudos otimizados, com metodos de ensino inovadores com as melhores tecnologias do mercado.</p>
+            <p>Nossa principal missão é levar a educação a outro nível, colocando o aluno como prioridade e para completar além das materias comuns trabalhamos com cursos de especialização, com o estudante saindo dos estudos pronto para o mercado profissional de trabalho</p>
+             <br><br><br>
+
+            <h2> Veja nossos cursos clicando no link abaixo!</h2>
+            <a href="cursos_escola.html">Cursos</a>
+
+            <h2>Faça sua matricula já!</h2>
+            <a href="contato_escola.html">Contato</a>
+     </section>
+
+<br><br><br><br><br>
+    <footer>
+        <button onclick="altenarContraste()">Alternar modo alto contraste</button>
+<br><br>
+<button onclick="aumentarFonte()">Aumentar Fonte</button>
+<br><br>
+<button onclick="diminuirFonte()">Diminuir Fonte</button>
+<br><br>
+ 
+
+ <div>
+<script>
+	function aumentarFonte() {
+	document.documentElement.style.fontSize = parseInt 
+	(getComputedStyle(document.documentElement).fontSize) + 1 + 'px'; }
+	function diminuirFonte() {
+	document.documentElement.style.fontSize = parseInt
+	(getComputedStyle(document.documentElement).fontSize) - 1 + 'px'; }
+</script>
+ 
+<script>
+	function altenarContraste() {
+		document.body.classList.toggle('contraste');
+		}
+</script>
+
+<div vw class="enabled">
+<div vw-access-button class="active"></div>
+<div vw-plugin-wrapper>
+<div class="vw-plugin-top-wrapper"></div>
+</div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</div>
+    </footer>
+    
+
+
+    
+</body>
+</html>
