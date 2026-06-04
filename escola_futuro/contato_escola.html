@@ -35,6 +35,54 @@
     <label for="mensagem" class="form-label">Mensagem</label>
     <input type="text" class="form-control" id="text">
   </div>
-  <button type="submit">Enviar</button>
+  <div class="mb-3"">
+  <button type="submit" class="btn btn-primary" style="margin: auto; display: block;">Enviar</button>
+  </div>
 </form>
-     </section>
+    </section>
+    <footer>
+    <div>
+    <button class="btn btn-light" style="margin: auto; display: block;" onclick="window.location.href='escola_gera_home.html'">Voltar para a página inicial</button>
+    <br>
+    <button class="btn btn-light" style="margin: auto; display: block;" onclick="window.location.href='cursos_escola.html'">Ver cursos</button>
+     <br><br><br>
+    </div>
+
+        <div class="div_a">
+        <button class="btn btn-light" style="margin: auto; display: block;" onclick="altenarContraste()">Alternar modo alto contraste</button>
+        <br><br>
+        <button class="btn btn-light" style="margin: auto; display: block;" onclick="aumentarFonte()">Aumentar Fonte</button>
+        <br><br>
+        <button class="btn btn-light" style="margin: auto; display: block;" onclick="diminuirFonte()">Diminuir Fonte</button>
+        <br><br>
+        <div>
+            <script>
+                function aumentarFonte() {
+                    document.documentElement.style.fontSize = parseInt
+                    (getComputedStyle(document.documentElement).fontSize) + 1 + 'px'; }
+                function diminuirFonte() {
+                    document.documentElement.style.fontSize = parseInt
+                    (getComputedStyle(document.documentElement).fontSize) - 1 + 'px'; }
+                </script>
+                <script>
+                    function altenarContraste() {
+                        document.body.classList.toggle('contraste');
+                    }
+                </script>
+            </div>
+        </div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        </div>
+        
+    </footer>
+</body>
+</html>

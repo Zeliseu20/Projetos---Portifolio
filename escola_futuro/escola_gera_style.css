@@ -1,6 +1,6 @@
 body.contraste {
     background-color: white;
-    color: black;
+    color: goldenrod;
 }
 
 
@@ -19,8 +19,9 @@ body{
 
 h1{
     text-align: center;
-    background-color: green;
-    border-radius: 10px;
+    color: goldenrod;
+    text-shadow: 5px 10px 10px black;
+    font-size: 70px;
 }
 
 h2{
@@ -35,7 +36,7 @@ table {
 	width:100%;
 	margin: 0 auto;
 	border-collapse: collapse;
-	background-color: black;
+	background-color: whitesmoke;
     filter: drop-shadow(5px  5px 5px #111);
     cursor: pointer;   
 }
@@ -48,17 +49,18 @@ th {
 td {
 	padding: 10px;
 	text-align: center;
-	border: 1px solid #ccc;
+	border: 1px solid black;
     border-radius: 5px;
+    color: black;
 }
 
 tr:nth-child(even) {
-	background-color: black;
+	background-color: white;
     border-radius: 10px;
 }
 
 tr:hover {
-	background-color: black;
+	background-color: whitesmoke;
     border-radius: 10px;
 }
 
@@ -82,7 +84,7 @@ button{
     border-radius: 5px;
     background-color: white;
     color: black;
-    display: block;
+    display: block !important;
     margin: 0 auto;
     width: 40%;
     box-sizing: border-box;
@@ -140,4 +142,3 @@ a{
 h3{
     text-align: center;
 }
-
