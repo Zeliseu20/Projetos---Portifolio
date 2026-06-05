@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="viagem.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>TravelDreams - Viagens</title>
+</head>
+<body>
+    <header>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">TravelDreams</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="home_viagens.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contato.viagem.html">Contato</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                      </li>
+                      <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button onclick="altenarContraste()" type="button" class="btn btn-outline-primary">Alternar Contraste</button>
+                        <button onclick="diminuirFonte()" type="button" class="btn btn-outline-primary">Diminuir Fonte</button>
+                        <button onclick="aumentarFonte()" type="button" class="btn btn-outline-primary">Aumentar Fonte</button>
+                      </div>
+    
+                      <div>
+                        <script>
+                          function aumentarFonte() {
+                          document.documentElement.style.fontSize = parseInt 
+                          (getComputedStyle(document.documentElement).fontSize) + 1 + 'px'; }
+                          function diminuirFonte() {
+                          document.documentElement.style.fontSize = parseInt
+                          (getComputedStyle(document.documentElement).fontSize) - 1 + 'px'; }
+                        </script>
+                         
+                        <script>
+                          function altenarContraste() {
+                            document.body.classList.toggle('contraste');
+                            }
+                        </script>
+                        
+                        <div vw class="enabled">
+                        <div vw-access-button class="active"></div>
+                        <div vw-plugin-wrapper>
+                        <div class="vw-plugin-top-wrapper"></div>
+                        </div>
+                        </div>
+                        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                        <script>
+                          new window.VLibras.Widget('https://vlibras.gov.br/app');
+                        </script>
+                    </ul>
+                    </div>
+                </div>
+              </nav>
+    </header>
+    <main>
+        <h1 class="h1perso">Nossos Destinos</h1>
+        <section>
+            <table class="table table-hover">
+                <thead>
+                    <th>Destino</th>
+                    <th>Transporte</th>
+                    <th>Hotel</th>
+                    <th>Valor</th>
+                    <th>Dias</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Porto Seguro</td>
+                    <td>Avião</td>
+                    <td>Arcobaleno</td>
+                    <td>5,000 R$(por pessoa)</td>
+                    <td>7 Dias</td>
+                </tr>
+                
+                <tr>
+                    <td>Maceio</td>
+                    <td>Avião</td>
+                    <td>Maceio Mar</td>
+                    <td>7,000 R$(por pessoa)</td>
+                    <td>10 Dias</td>
+                </tr>
+                
+                <tr>
+                    <td>Salvador</td>
+                    <td>Avião</td>
+                    <td>Gran Palladium</td>
+                    <td>10,000 R$(por pessoa)</td>
+                    <td>7 Dias</td>
+                </tr>
+                
+                <tr>
+                    <td>Natal</td>
+                    <td>Avião</td>
+                    <td>Ocean Pallace</td>
+                    <td>6,500 R$(por pessoa)</td>
+                    <td>6 Dias</td>
+                </tr>
+                
+                <tr>
+                    <td>Gramado</td>
+                    <td>Onibûs</td>
+                    <td>Hotel Alpestre</td>
+                    <td>4,500 R$(por pessoa)</td>
+                    <td>10 Dias</td>
+                </tr>
+                
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>Avião</td>
+                    <td>SummerVille</td>
+                    <td>6,000 R$ (por pessoa)</td>
+                    <td>7 Dias</td>
+                </tr>   
+                </tbody>
+              </table>
+        </section>
+    </main>
+    <footer>
+        <h2 class="hperso">Caso tenha se interresado por algum destino entre em contato!</h2>
+        <p class="pperso"><a class="aperso" href="contato.viagem.html">Fale conosco</a> — teremos prazer em ajudar.</p>
+    </footer>
+    
+</body>
+</html>

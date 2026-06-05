@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="viagem.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>TravelDreams - Sobre</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">TravelDreams</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home_viagens.html">Home</a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">Viagens</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.viagem.html">Contato</a>
+                  </li>
+                  <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button onclick="altenarContraste()" type="button" class="btn btn-outline-primary">Alternar Contraste</button>
+                    <button onclick="diminuirFonte()" type="button" class="btn btn-outline-primary">Diminuir Fonte</button>
+                    <button onclick="aumentarFonte()" type="button" class="btn btn-outline-primary">Aumentar Fonte</button>
+                  </div>
+
+                  <div>
+                    <script>
+                      function aumentarFonte() {
+                      document.documentElement.style.fontSize = parseInt 
+                      (getComputedStyle(document.documentElement).fontSize) + 1 + 'px'; }
+                      function diminuirFonte() {
+                      document.documentElement.style.fontSize = parseInt
+                      (getComputedStyle(document.documentElement).fontSize) - 1 + 'px'; }
+                    </script>
+                     
+                    <script>
+                      function altenarContraste() {
+                        document.body.classList.toggle('contraste');
+                        }
+                    </script>
+                    
+                    <div vw class="enabled">
+                    <div vw-access-button class="active"></div>
+                    <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                    </div>
+                    </div>
+                    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                    <script>
+                      new window.VLibras.Widget('https://vlibras.gov.br/app');
+                    </script>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+                
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <h1 class="mb-4">Nossa história</h1>
+            <p class="lead">A TravelDreams nasceu da paixão por descobrir o mundo e compartilhar experiências inesquecíveis.</p>
+            <p>Somos uma agência dedicada a planejar viagens com cuidado, transparência e atendimento próximo. Desde o primeiro contato até o seu retorno, acompanhamos cada etapa para que você viaje com tranquilidade.</p>
+            <p>Oferecemos pacotes nacionais e internacionais, passagens, hospedagem e roteiros personalizados — sempre buscando o melhor custo-benefício para o seu perfil e orçamento.</p>
+            <h2 class="h4 mt-4">Nossa missão</h2>
+            <p>Transformar sonhos de viagem em memórias reais, com planejamento seguro e suporte quando você precisar.</p>
+            <h2 class="h4 mt-4">Por que escolher a TravelDreams?</h2>
+            <ul>
+                <li>Atendimento humanizado e respostas rápidas</li>
+                <li>Opções de destino para todos os estilos de viagem</li>
+                <li>Parcerias com operadoras e hotéis confiáveis</li>
+                <li>Transparência em valores e condições</li>
+            </ul>
+            <p class="mt-4">Quer conhecer nossos pacotes ou tirar dúvidas? <a href="contato.viagem.html">Fale conosco</a> — teremos prazer em ajudar.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center py-3 mb-0">Copyright 2026 TravelDreams</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
